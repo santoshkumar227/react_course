@@ -10,7 +10,7 @@ import LoginThree from './components/login/loginthree';
 import { Loginbootstrap } from './components/login/login-bootstrap';
 import { DataBinding } from './components/data-binding/data-binding.jsx';
 import LocalSolarTime from './components/time/localsolartime.jsx';
-
+import Nonprimitivedatabinding from './components/data-binding/nonprimitivedatabinding.jsx';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -28,6 +28,7 @@ root.render(
       <Routes>
         {/* Default route */}
         
+        <Route path="/nonprimitivedatabinding" element={<Nonprimitivedatabinding />} />
         <Route path="/localsolartime" element={<LocalSolarTime />} />
         <Route path="/data-binding" element={<DataBinding />} />
         <Route path="/login-bootstrap" element={<Loginbootstrap />} />
